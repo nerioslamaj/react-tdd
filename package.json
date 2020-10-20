@@ -1,31 +1,37 @@
 {
-  "name": "react-tdd",
+  "name": "appointments",
   "version": "1.0.0",
-  "description": "",
+  "description": "Appointments system",
   "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nerioslamaj/react-tdd"
-  },
-  "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watchAll",
-    "build": "webpack"
+    "url": "example.com"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/plugin-transform-runtime": "^7.11.5",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/preset-react": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
     "babel-loader": "^8.1.0",
-    "jest": "^26.5.3",
-    "webpack": "^5.0.0",
-    "webpack-cli": "^4.0.0"
+    "faker": "^4.1.0",
+    "jest": "^24.9.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "@babel/runtime": "^7.11.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "@babel/runtime": "^7.12.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 67,
+    "jsxBracketSameLine": true
   }
 }
